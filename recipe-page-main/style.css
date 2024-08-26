@@ -38,13 +38,14 @@ b {
 }
 
 #main {
-	width: 600px;
+	max-width: 800px;
 	display: flex;
 	flex-direction: column;
 	margin: 80px auto;
 	background-color: hsl(0, 0%, 100%);
 	padding: 60px 80px;
 	border-radius: 16px;
+	box-sizing: border-box;
 }
 
 /********** BLOCK ***/
@@ -128,4 +129,15 @@ td {
 /********** IMAGE ***/
 img { 
 	border-radius: 16px;
+}
+
+/********** BP ***/
+
+@media (max-width: 800px) {
+    #main {
+		width: 100%;
+		margin: 0;
+		padding: 20px;
+		border-radius: 0;
+	}
 }
